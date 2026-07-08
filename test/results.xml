@@ -1,0 +1,16 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1783527051" />
+    <testcase name="test_reset_init" classname="test_rv32i_qspi" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/test/test_rv32i_qspi.py" lineno="102" time="0.005822896957397461" sim_time_ns="110.001" ratio_time="18891.112242722025" />
+    <testcase name="test_instr_fetch_word" classname="test_rv32i_qspi" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/test/test_rv32i_qspi.py" lineno="115" time="0.0054547786712646484" sim_time_ns="550.0" ratio_time="100829.02224747585" />
+    <testcase name="test_instr_fetch_offset" classname="test_rv32i_qspi" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/test/test_rv32i_qspi.py" lineno="131" time="0.005460262298583984" sim_time_ns="550.0" ratio_time="100727.76176753122" />
+    <testcase name="test_data_read_word" classname="test_rv32i_qspi" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/test/test_rv32i_qspi.py" lineno="147" time="0.008931159973144531" sim_time_ns="900.0000000000002" ratio_time="100770.78483715966" />
+    <testcase name="test_data_write_word" classname="test_rv32i_qspi" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/test/test_rv32i_qspi.py" lineno="165" time="0.009098529815673828" sim_time_ns="900.0" ratio_time="98917.07981761963" />
+    <testcase name="test_data_read_psram_b" classname="test_rv32i_qspi" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/test/test_rv32i_qspi.py" lineno="182" time="0.009163856506347656" sim_time_ns="900.0" ratio_time="98211.92631907586" />
+    <testcase name="test_data_write_psram_b" classname="test_rv32i_qspi" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/test/test_rv32i_qspi.py" lineno="199" time="0.008915185928344727" sim_time_ns="900.0" ratio_time="100951.34383440751" />
+    <testcase name="test_byte_write_strobe" classname="test_rv32i_qspi" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/test/test_rv32i_qspi.py" lineno="216" time="0.01030588150024414" sim_time_ns="1010.0" ratio_time="98002.29121362143" />
+    <testcase name="test_halfword_write" classname="test_rv32i_qspi" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/test/test_rv32i_qspi.py" lineno="242" time="0.0076961517333984375" sim_time_ns="740.0" ratio_time="96151.95043370507" />
+    <testcase name="test_back_to_back" classname="test_rv32i_qspi" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/test/test_rv32i_qspi.py" lineno="263" time="0.009649515151977539" sim_time_ns="980.0" ratio_time="101559.50683171497" />
+    <testcase name="test_data_then_instr" classname="test_rv32i_qspi" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/test/test_rv32i_qspi.py" lineno="277" time="0.009094476699829102" sim_time_ns="900.0" ratio_time="98961.16397955171" />
+  </testsuite>
+</testsuites>
