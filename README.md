@@ -1,7 +1,5 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg) ![](../../workflows/fpga/badge.svg)
 
-zztop 
-
 # TinyQV - A Risc-V SoC for Tiny Tapeout
 
 - [Documentation for project](docs/info.md)
