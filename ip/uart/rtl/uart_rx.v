@@ -6,7 +6,7 @@
 // Module: uart_rx 
 // 
 // Notes:
-// - UART reciever module.
+// - UART receiver module.
 //
 
 `default_nettype none
@@ -14,16 +14,16 @@
 module uart_rx #(parameter 
     BIT_RATE     = 9600,       // Input bit rate of the UART line, bits / sec
     CLK_HZ       = 50_000_000, // Clock frequency in hertz.
-    PAYLOAD_BITS = 8,          // Number of data bits recieved per UART packet.
+    PAYLOAD_BITS = 8,          // Number of data bits received per UART packet.
     STOP_BITS    = 1           // Number of stop bits indicating the end of a packet.
 ) (
     input  wire       clk          , // Top level system clock input.
     input  wire       resetn       , // Asynchronous active low reset.
-    input  wire       uart_rxd     , // UART Recieve pin.
+    input  wire       uart_rxd     , // UART receive pin.
     output reg        uart_rts     , // UART Request to send pin.
     input  wire       uart_rx_read , // Available byte has been read and can be cleared.
-    output wire       uart_rx_valid, // Valid data recieved and available.
-    output wire [PAYLOAD_BITS-1:0] uart_rx_data   // The recieved data.
+    output wire       uart_rx_valid, // Valid data received and available.
+    output wire [PAYLOAD_BITS-1:0] uart_rx_data   // The received data.
 );
 
 // -------------------------------------------------------------------------- 
@@ -47,8 +47,8 @@ localparam       COUNT_REG_LEN      = 1+$clog2(CYCLES_PER_BIT);
 reg [1:0] rxd_reg;
 
 //
-// Storage for the recieved serial data.
-reg [PAYLOAD_BITS-1:0] recieved_data;
+// Storage for the received serial data.
+reg [PAYLOAD_BITS-1:0] received_data;
 
 //
 // Counter for the number of cycles over a packet bit.
@@ -73,7 +73,7 @@ localparam FSM_READY = FSM_STOP + STOP_BITS;
 // 
 
 assign uart_rx_valid = fsm_state == FSM_READY;
-assign uart_rx_data = recieved_data;
+assign uart_rx_data = received_data;
 
 // --------------------------------------------------------------------------- 
 // FSM next state selection.
@@ -102,15 +102,15 @@ endfunction
 // 
 
 //
-// Handle updates to the recieved data register.
-always @(posedge clk) begin : p_recieved_data
+// Handle updates to the received data register.
+always @(posedge clk) begin : p_received_data
     if(fsm_state >= FSM_RECV && fsm_state < FSM_STOP && next_bit ) begin
-        recieved_data <= {bit_sample, recieved_data[PAYLOAD_BITS-1:1]};
+        received_data <= {bit_sample, received_data[PAYLOAD_BITS-1:1]};
     end
 end
 
 //
-// Sample the recieved bit when in the middle of a bit frame.
+// Sample the received bit when in the middle of a bit frame.
 always @(posedge clk) begin : p_bit_sample
     if(!resetn) begin
         bit_sample <= 1'b0;
@@ -121,7 +121,7 @@ end
 
 
 //
-// Increments the cycle counter when recieving.
+// Increments the cycle counter when receiving.
 always @(posedge clk) begin : p_cycle_counter
     if(!resetn) begin
         cycle_counter <= {COUNT_REG_LEN{1'b0}};

@@ -1,16 +1,16 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1784473761" />
-    <testcase name="test_reset_state" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="176" time="0.002003192901611328" sim_time_ns="1500.0" ratio_time="748804.5703403951" />
-    <testcase name="test_baud_div" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="196" time="0.0010294914245605469" sim_time_ns="1200.0000000000002" ratio_time="1165624.0852246413" />
-    <testcase name="test_tx_basic" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="209" time="0.00719904899597168" sim_time_ns="10800.0" ratio_time="1500198.1520119226" />
-    <testcase name="test_tx_second_byte" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="231" time="0.007038593292236328" sim_time_ns="10800.0" ratio_time="1534397.506943974" />
-    <testcase name="test_tx_busy_flag" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="248" time="0.011765718460083008" sim_time_ns="11600.0" ratio_time="985915.1431639952" />
-    <testcase name="test_rx_basic" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="277" time="0.007555484771728516" sim_time_ns="12000.0" ratio_time="1588250.173556327" />
-    <testcase name="test_rx_valid_clears_on_read" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="301" time="0.007862329483032227" sim_time_ns="12400.0" ratio_time="1577140.722321618" />
-    <testcase name="test_ctrl_rx_irq_enable" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="327" time="0.007883787155151367" sim_time_ns="12500.0" ratio_time="1585532.4039072187" />
-    <testcase name="test_ctrl_tx_irq_enable" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="352" time="0.00794219970703125" sim_time_ns="11600.0" ratio_time="1460552.5456292026" />
-    <testcase name="test_loopback" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="385" time="0.014046430587768555" sim_time_ns="22200.0" ratio_time="1580472.6945599592" />
-    <testcase name="test_multiple_rx_bytes" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="423" time="0.02184605598449707" sim_time_ns="35200.000000000015" ratio_time="1611274.8234729187" />
+    <property name="random_seed" value="1784473830" />
+    <testcase name="test_reset_state" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="176" time="0.0020160675048828125" sim_time_ns="1500.0" ratio_time="744022.7057710502" />
+    <testcase name="test_baud_div" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="196" time="0.0010554790496826172" sim_time_ns="1200.0000000000002" ratio_time="1136924.5086966346" />
+    <testcase name="test_tx_basic" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="209" time="0.0074770450592041016" sim_time_ns="10800.0" ratio_time="1444420.8794362424" />
+    <testcase name="test_tx_second_byte" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="231" time="0.007096290588378906" sim_time_ns="10800.0" ratio_time="1521921.8922187877" />
+    <testcase name="test_tx_busy_flag" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="248" time="0.011726856231689453" sim_time_ns="11600.0" ratio_time="989182.4177611516" />
+    <testcase name="test_rx_basic" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="277" time="0.007622957229614258" sim_time_ns="12000.0" ratio_time="1574192.224689582" />
+    <testcase name="test_rx_valid_clears_on_read" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="301" time="0.007901906967163086" sim_time_ns="12400.0" ratio_time="1569241.456717859" />
+    <testcase name="test_ctrl_rx_irq_enable" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="327" time="0.007921695709228516" sim_time_ns="12500.0" ratio_time="1577944.9828447602" />
+    <testcase name="test_ctrl_tx_irq_enable" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="352" time="0.0077745914459228516" sim_time_ns="11600.0" ratio_time="1492039.8172283724" />
+    <testcase name="test_loopback" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="385" time="0.014323949813842773" sim_time_ns="22200.0" ratio_time="1549851.8417417067" />
+    <testcase name="test_multiple_rx_bytes" classname="test_uart" file="/home/runner/work/tt10-tinyQV/tt10-tinyQV/ip/uart/test/test_uart.py" lineno="423" time="0.022018909454345703" sim_time_ns="35200.000000000015" ratio_time="1598625.9479827627" />
   </testsuite>
 </testsuites>
